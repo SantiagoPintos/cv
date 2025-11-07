@@ -3,7 +3,7 @@ FROM node:22.2.0-slim as BUILD_STAGE
 WORKDIR /app
 
 # Install pnpm
-RUN npm install -g pnpm@8
+RUN npm install -g pnpm@10
 
 COPY package.json pnpm-lock.yaml ./
 
@@ -18,7 +18,7 @@ FROM node:alpine
 WORKDIR /app
 
 # Install pnpm in production stage
-RUN npm install -g pnpm@8
+RUN npm install -g pnpm@10
 
 COPY --from=BUILD_STAGE /app/package.json ./package.json
 COPY --from=BUILD_STAGE /app/node_modules ./node_modules
