@@ -8,6 +8,7 @@ import { buildSchema } from "type-graphql";
 import { MeResolver } from "../../apollo/resolvers";
 
 let apolloServer: ApolloServer;
+// biome-ignore lint/suspicious/noExplicitAny: Apollo handler type is dynamic
 let handler: any;
 
 try {
