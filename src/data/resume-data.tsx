@@ -48,9 +48,11 @@ export const RESUME_DATA: ResumeData = {
         <>
           AI & Data Engineering team at Great Place To Work
           <ul className="list-inside list-disc">
-            <li>Design and development of AI agents.</li>
-            <li>Data processing and analysis pipelines.</li>
+            <li>Developed AI agents using Python, LangGraph, embeddings, and retrieval-augmented pipelines.</li>
+            <li>Implemented service integrations and automation scripts for model evaluation.</li>
             <li>Exploration of new technologies and frameworks.</li>
+            <li>Contributed to backend components for data processing.</li>
+            <li>Participated in code reviews, documentation, and refinement of agent architectures.</li>
           </ul>
         </>
       ),
@@ -66,9 +68,10 @@ export const RESUME_DATA: ResumeData = {
         <>
           Development of management systems, maintenance of network infrastructure and servers, technical support to teachers and students.
           <ul className="list-inside list-disc">
-            <li>Maintained network infrastructure and servers.</li>
-            <li>Developed management systems for the school.</li>
-            <li>Provided technical support to teachers and students.</li>
+            <li>Managed Linux and Windows lab environments for technical training programs.</li>
+            <li>Set up reproducible environments for programming, networking, and systems-related coursework.</li>
+            <li>Provided technical support to instructors and assisted in lab-based practical activities.</li>
+            <li>Performed hardware maintenance, incident handling, and inventory tracking.</li>
           </ul>
         </>
       ),
