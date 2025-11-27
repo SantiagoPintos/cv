@@ -1,0 +1,16 @@
+{
+  "main": ".open-next/worker.js",
+  "name": "cv",
+  "compatibility_date": "2025-03-25",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "route": {
+    "pattern": "spintos.dev/cv*",
+    "zone_name": "spintos.dev"
+  }
+}

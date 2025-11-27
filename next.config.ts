@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  basePath: "/cv",
   // Enable React strict mode for better development experience
   reactStrictMode: true,
 
