@@ -1,4 +1,3 @@
-import { Analytics } from "@vercel/analytics/react";
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 
@@ -88,7 +87,6 @@ export default function RootLayout({
       <body>
         <ErrorBoundary>{children}</ErrorBoundary>
       </body>
-      <Analytics />
     </html>
   );
 }
