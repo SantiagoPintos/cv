@@ -47,6 +47,19 @@ export interface ResumeData {
       href: string;
     };
   }>;
+  certificates?: Array<{
+    name: string;
+    date: string;
+    issuer: string;
+    url?: string;
+  }>;
+  awards?: Array<{
+    title: string;
+    date: string;
+    awarder: string;
+    summary: string;
+    url?: string;
+  }>;
 }
 
 

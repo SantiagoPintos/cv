@@ -33,7 +33,7 @@ export const RESUME_DATA: ResumeData = {
       school: "Universidad ORT Uruguay",
       degree: "Computer Science",
       start: "2023",
-      end: "2010",
+      end: "current",
     },
   ],
   work: [
@@ -116,6 +116,29 @@ export const RESUME_DATA: ResumeData = {
         label: "Email",
         href: "https://github.com/santiagopintos/Email",
       },
+    },
+  ],
+  certificates: [
+    {
+      name: "Checkout Pro",
+      date: "2024",
+      issuer: "Mercado Libre",
+      url: "https://www.mercadopago.com.uy/developers/panel/developer-program/certification/cert_46a59bd63f1111efbb7b8e3c267079e3"
+    },
+    {
+      name: "Foundational C# with Microsoft",
+      date: "2024",
+      issuer: "Microsoft - freeCodeCamp",
+      url: "https://www.freecodecamp.org/certification/fcc5feb4082-0a79-4944-a977-1b0608b421ef/foundational-c-sharp-with-microsoft"
+    }
+  ],
+  awards: [
+    {
+      title: "Champion",
+      date: "2018",
+      awarder: "Sumo.uy - Facultad de Ingeniería, Universidad de la República",
+      summary: "Robotics competition hosted by Facultad de Ingeniería, UDELAR. Qualifying for the RoboCup world robotics championship held in Sydney the following year.",
+      url: "https://2019.robocup.org/"
     },
   ],
 } as const;

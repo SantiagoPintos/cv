@@ -5,6 +5,8 @@ import { SectionErrorBoundary } from "@/components/section-error-boundary";
 import { SectionSkeleton } from "@/components/section-skeleton";
 import { RESUME_DATA } from "@/data/resume-data";
 import { generateResumeStructuredData } from "@/lib/structured-data";
+import { Awards } from "./components/Awards";
+import { Certificates } from "./components/Certificates";
 import { Education } from "./components/Education";
 import { Header } from "./components/Header";
 import { Projects } from "./components/Projects";
@@ -105,6 +107,22 @@ export default function ResumePage() {
                 <Projects projects={RESUME_DATA.projects} />
               </Suspense>
             </SectionErrorBoundary>
+
+            {RESUME_DATA.certificates && RESUME_DATA.certificates.length > 0 && (
+              <SectionErrorBoundary sectionName="Certificates">
+                <Suspense fallback={<SectionSkeleton lines={3} />}>
+                  <Certificates certificates={RESUME_DATA.certificates} />
+                </Suspense>
+              </SectionErrorBoundary>
+            )}
+
+            {RESUME_DATA.awards && RESUME_DATA.awards.length > 0 && (
+              <SectionErrorBoundary sectionName="Awards">
+                <Suspense fallback={<SectionSkeleton lines={3} />}>
+                  <Awards awards={RESUME_DATA.awards} />
+                </Suspense>
+              </SectionErrorBoundary>
+            )}
           </div>
         </section>
 
