@@ -22,6 +22,14 @@ export const metadata: Metadata = {
     description: RESUME_DATA.about,
     type: "profile",
     locale: "en_US",
+    images: [
+      {
+        url: "https://spintos.dev/cv/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: `${RESUME_DATA.name}'s profile picture`,
+      },
+    ],
   },
 };
 
