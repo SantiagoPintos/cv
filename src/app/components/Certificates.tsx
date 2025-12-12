@@ -36,10 +36,10 @@ function CertificateItem({ certificate }: CertificateItemProps) {
                 <span>{name}</span>
               )}
             </h3>
-            <div className="mt-1 text-sm text-gray-500">{issuer}</div>
+            <div className="mt-1 text-sm text-muted-foreground">{issuer}</div>
           </div>
           <div
-            className="text-sm tabular-nums text-gray-500"
+            className="text-sm tabular-nums text-muted-foreground"
             title={`Date: ${date}`}
           >
             {date}
