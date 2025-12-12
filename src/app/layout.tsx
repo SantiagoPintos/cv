@@ -94,6 +94,7 @@ export default function RootLayout({
           attribute="class"
           defaultTheme="system"
           enableSystem={true}
+          disableTransitionOnChange={true}
         >
           <ErrorBoundary>{children}</ErrorBoundary>
         </ThemeProvider>
