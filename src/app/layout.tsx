@@ -89,6 +89,26 @@ export default function RootLayout({
       className={inter.className}
       suppressHydrationWarning={true}
     >
+      <head>
+        <script
+          // biome-ignore lint/security/noDangerouslySetInnerHtml: Required for theme initialization before paint
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  var theme = localStorage.getItem('theme');
+                  if (theme === 'light' || theme === 'dark') {
+                    document.documentElement.classList.add(theme);
+                  } else {
+                    var systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                    document.documentElement.classList.add(systemTheme);
+                  }
+                } catch (e) {}
+              })();
+            `,
+          }}
+        />
+      </head>
       <body>
         <ThemeProvider
           attribute="class"
