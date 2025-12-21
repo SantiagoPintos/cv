@@ -14,7 +14,7 @@ export const RESUME_DATA: ResumeData = {
   avatarUrl: "https://avatars.githubusercontent.com/u/26977363?v=4",
   personalWebsiteUrl: "https://spintos.dev/cv",
   contact: {
-    email: "spintos@outlook.es",
+    email: "contact@spintos.dev",
     social: [
       {
         name: "GitHub",
