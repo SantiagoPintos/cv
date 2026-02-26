@@ -38,6 +38,22 @@ export const RESUME_DATA: ResumeData = {
   ],
   work: [
     {
+      company: "EverPass Media",
+      link: "https://everpass.com/",
+      badges: ["Node", "React", "GraphQL"],
+      title: "SSR Software Engineer",
+      start: "2026",
+      end: "",
+      description: (
+        <>
+          Semi Senior Software Engineer
+          <ul className="list-inside list-disc">
+            <li>Full Stack development.</li>
+          </ul>
+        </>
+      ),
+    },
+    {
       company: "UKG",
       link: "https://www.ukg.com/",
       badges: ["Python", "AI"],
