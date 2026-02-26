@@ -5,7 +5,7 @@ export const RESUME_DATA: ResumeData = {
   initials: "SP",
   location: "Montevideo, Uruguay",
   locationLink: "https://www.google.com/maps/place/Montevideo,+Uruguay",
-  about: "Software Engineer | Backend & AI/ML Development.",
+  about: "Software Engineer | Full Stack & AI/ML Development.",
   summary: (
     <>
       Software engineer focused on backend, data engineering, and applied AI. Experience building AI agents with Python, LangGraph, and vector-based retrieval pipelines, along with service development in Node.js/TypeScript.
